@@ -7,6 +7,13 @@ Make sure to do the following:
 
 - Move ``override.conf`` to the directory created. This will automatically log you in to tty1 at boot
 
+- If it doesn't work on boot, I would just delete ``override.conf``, login as root and type the following:
+```
+export EDITOR=nano
+systemctl edit getty@tty1
+```
+and then paste what's in override.conf in that. Should work after that.
+
 - In your ``~/.zprofile`` or ``~/.bash_profile`` enter the following:
 ```bash
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
