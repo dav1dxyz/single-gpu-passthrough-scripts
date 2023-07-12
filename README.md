@@ -17,5 +17,5 @@ or just copy the .zprofile from this github to your home directory (this assumes
 
 - You'll obviously need libvirt hooks so make sure that's set up https://passthroughpo.st/simple-per-vm-libvirt-hooks-with-the-vfio-tools-hook-helper/
 
-- Make sure ``kvm.conf`` is in the directory ``/etc/libvirt/hooks``, and the win10 folder is in ``/etc/libvirt/hooks/qemu.d``. You'll need to make some changes to ``kvm.conf``. You'll need to add the PCI devices you're going to use, as well as edit the start.sh and revert.sh scripts with them.
-I won't go through the rest, I recommend watching [mutas tutorial](https://www.youtube.com/watch?v=BUSrdUoedTo&t=429s)
+- Make sure ``kvm.conf`` is in the directory ``/etc/libvirt/hooks``, and the win10 folder is in ``/etc/libvirt/hooks/qemu.d``. You'll need to make some changes to ``kvm.conf``. You'll need to add the PCI devices you're going to use, as well as edit the start.sh and revert.sh scripts with them. Also change which WM/DE you're using e.g. I currently have ``killall bspwm``, but that's what I'm using right now.
+I recommend watching [mutas tutorial](https://www.youtube.com/watch?v=BUSrdUoedTo&t=429s) for anything else.
